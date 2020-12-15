@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, getByTitle } from '@testing-library/react';
 import App from './App';
 import Carlist from './components/Carlist';
 
@@ -16,3 +16,5 @@ test('New Car button opens modal form', () => {
   const element = getByText(/Add Car/i)
   expect(element).toBeInTheDocument();
 });
+
+
